@@ -1,0 +1,568 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    
+}
+
+
+header {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.nav-list a i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
+
+.nav-list a:hover {
+    color: #c4b6ab;
+}
+
+
+/* 
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 2rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #9abfe6; 
+}
+
+
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-between; 
+}
+
+.nav-item {
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer; 
+}
+
+.nav-item i {
+    margin-right: 8px; 
+} */
+
+
+/* couleurs des icons */
+
+ul li .accei{
+    color: #71b1f0;
+    margin-right: 5px;
+} 
+
+ul li .apropot{
+    color: #ecd44d;
+    margin-right: 5px;
+}
+
+ul li .conts{
+    color: #5da8f2;
+    margin-right: 5px;
+}
+
+ul li .conexs{
+    color: #0477ea;
+    margin-right: 5px;
+}
+
+.about, .team, .mission {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h1, .team h2, .mission h2 {
+    margin-top: 0;
+}
+
+
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.incon{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h1, .contact h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin: 10px 0 5px;
+}
+
+.contact form input, .contact form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.contact form button {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact form button i {
+    margin-right: 8px;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact p i {
+    margin-right: 8px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.member {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding: 10px;
+}
+
+.member img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.member h3 {
+    margin: 10px 0 5px;
+}
+
+.member p {
+    margin: 0;
+    color: #777;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+.container{
+    background: url(/img/téléchargement\ 15.jpeg) no-repeat;
+    background-size: cover;
+}
+
+.welcome, .about, .contact, .login, .cours-detail, .courses {
+    margin-bottom: 2rem;
+}
+
+
+/* css cours  */
+
+.courses {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.courses h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 280px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.course-icon {
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.course-icon.html-icon {
+    color: #fc491d;
+}
+
+.course-icon.css-icon {
+    color: #3473df;
+}
+
+.course-icon.js-icon {
+    color: #FFD43B;
+}
+
+.course-icon.react-icon {
+    color: #74C0FC;
+}
+
+.course p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.course:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.course a {
+    text-decoration: none;
+    color: #180339;
+}
+
+.course:hover .course-icon {
+    transform: scale(1.1);
+}
+
+ /* css welcome */
+
+.welcome {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #f9f9f9;
+}
+
+.welcome .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #333;
+    background-color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.welcome .btn:hover {
+    background-color: #ff6a00;
+    color: white;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#maicontain{
+    background: linear-gradient(13deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#maicontac{
+    background: url(/img/im13.jpeg) no-repeat;
+    background-size:cover ;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.login {
+    background: #faf9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.login h1 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.login p {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.login p a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login p a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem;
+}
+
+form input, form textarea {
+    padding: 0.7rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 0.7rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #555;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .nav-list {
+        justify-content: space-between;
+    }
+
+    .nav-list a {
+        font-size: 1rem;
+    }
+
+    .nav-list a i {
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        text-align: center;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .nav-list a {
+        font-size: 1.2rem;
+    }
+
+    .nav-list a i {
+        margin-right: 5px;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .courses .course {
+        width: 100%;
+    }
+
+    .contact {
+        padding: 15px;
+    }
+    .contact form input, .contact form textarea {
+        padding: 8px;
+    }
+    .contact form button {
+        padding: 8px;
+    }
+
+    
+}
+
+
+@media (max-width: 768px) {
+    .welcome h1 {
+        font-size: 2rem;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+    }
+
+    .welcome .btn {
+        font-size: 1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome p {
+        font-size: 0.9rem;
+    }
+
+    .welcome .btn {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .course-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .courses h2 {
+        font-size: 2rem;
+    }
+
+    .course {
+        padding: 15px;
+    }
+
+    .course h3 {
+        font-size: 1.25rem;
+    }
+
+    .course p {
+        font-size: 0.9rem;
+    }
+}
+
