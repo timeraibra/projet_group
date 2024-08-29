@@ -44,54 +44,7 @@ header {
 }
 
 
-/* 
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
-}
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 2rem;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-nav ul li a:hover {
-    color: #9abfe6; 
-}
-
-
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: space-between; 
-}
-
-.nav-item {
-    color: white;
-    padding: 10px 20px;
-    cursor: pointer; 
-}
-
-.nav-item i {
-    margin-right: 8px; 
-} */
-
-
-/* couleurs des icons */
 
 ul li .accei{
     color: #71b1f0;
@@ -224,7 +177,7 @@ main {
 }
 
 .container{
-    background: url(/img/téléchargement\ 15.jpeg) no-repeat;
+    background: url('img/téléchargement\ 15.jpeg') no-repeat;
     background-size: cover;
 }
 
@@ -373,7 +326,7 @@ footer {
 }
 
 #maicontac{
-    background: url(/img/im13.jpeg) no-repeat;
+    background: url('img/im13.jpeg') no-repeat;
     background-size:cover ;
     flex: 1;
     display: flex;
