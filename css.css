@@ -9,15 +9,24 @@ body {
 }
 
 header {
-    background: linear-gradient(45deg, #333, #555);
+    background-color: #4CAF50;
     color: white;
-    padding: 20px;
+    padding: 20px 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
     margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 2.5em;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 main {
@@ -27,16 +36,16 @@ main {
 h2 {
     color: #444;
     margin-top: 30px;
-    font-size: 1.5em;
+    font-size: 2em;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 pre {
     background-color: #e7e7e7;
     padding: 15px;
-    border-left: 5px solid #333;
+    border-left: 5px solid #4CAF50;
     margin-top: 10px;
     overflow-x: auto;
-    border-radius: 5px;
 }
 
 .img-example {
@@ -44,10 +53,12 @@ pre {
     height: auto;
     margin: 20px 0;
     display: block;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.2s ease-in-out;
 }
 
-/* Exemple de mise en page avec animation */
+/* Exemple de mise en page */
 .layout-example {
     display: flex;
     gap: 20px;
@@ -57,18 +68,19 @@ pre {
 
 .layout-example .box {
     flex: 1;
-    padding: 20px;
+    padding: 40px;
     background-color: #ddd;
     text-align: center;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, background-color 0.3s;
     cursor: pointer;
 }
 
 .layout-example .box:hover {
     transform: scale(1.05);
-    background-color: #c6e973;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
 }
 
 /* Pied de page */
@@ -80,32 +92,60 @@ footer {
     margin-top: 40px;
 }
 
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Ajustements pour la responsivité */
 @media (max-width: 768px) {
     header, main, footer {
         padding: 10px;
     }
 
+    header h1 {
+        font-size: 2em;
+    }
+
     h2 {
-        font-size: 1.2em;
+        font-size: 1.5em;
     }
 
     .layout-example .box {
         flex-basis: 100%;
+        padding: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
     h2 {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     pre {
         padding: 10px;
-        font-size: 0.9em;
-    }
-
-    header h1 {
-        font-size: 1.5em;
+        font-size: 14px;
     }
 }

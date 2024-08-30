@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="html.css">
     <title>Introduction à HTML</title>
+    <link rel="stylesheet" href="html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-
     <!-- En-tête du document -->
     <header>
         <h1>Introduction à HTML</h1>
+        <p>Apprenez les bases de HTML pour structurer vos pages web.</p>
     </header>
 
     <!-- Contenu principal du document -->
     <main>
-        <section>
-            <h2>Qu'est-ce que HTML ?</h2>
+        <!-- Section 1: Qu'est-ce que HTML ? -->
+        <section class="intro">
+            <h2><i class="fas fa-code"></i> Qu'est-ce que HTML ?</h2>
             <p>HTML (HyperText Markup Language) est le langage de balisage utilisé pour créer des pages Web. Il permet de structurer le contenu en utilisant des éléments tels que des titres, des paragraphes, des liens, des images, et bien plus encore.</p>
         </section>
 
+        <!-- Section 2: Structure de Base d'un Document HTML -->
         <section>
-            <h2>Structure de Base d'un Document HTML</h2>
+            <h2><i class="fas fa-file-alt"></i> Structure de Base d'un Document HTML</h2>
             <p>Voici un exemple de la structure de base d'un document HTML :</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+            <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang="fr"&gt;
 &lt;head&gt;
     &lt;meta charset="UTF-8"&gt;
@@ -36,8 +39,9 @@
 </code></pre>
         </section>
 
+        <!-- Section 3: Principaux Éléments HTML -->
         <section>
-            <h2>Principaux Éléments HTML</h2>
+            <h2><i class="fas fa-tags"></i> Principaux Éléments HTML</h2>
             <ul>
                 <li><strong>&lt;h1&gt; à &lt;h6&gt;</strong> : Titres de différents niveaux</li>
                 <li><strong>&lt;p&gt;</strong> : Paragraphe</li>
@@ -50,8 +54,8 @@
 
         <!-- Lien vers un PDF en HTML -->
         <section>
-            <h2>Ressources Supplémentaires</h2>
-            <p>Pour approfondir vos connaissances en HTML, vous pouvez télécharger ce <a href="/img/html_fr.pdf" class="pdf-link">document PDF</a></p>
+            <h2><i class="fas fa-book"></i> Ressources Supplémentaires</h2>
+            <p>Pour approfondir vos connaissances en HTML, vous pouvez télécharger ce <a href="/img/html_fr.pdf" class="pdf-link">document PDF</a>.</p>
         </section>
     </main>
 
@@ -59,7 +63,5 @@
     <footer>
         <p>&copy; 2024 Cours de HTML. Tous droits réservés.</p>
     </footer>
-
 </body>
 </html>
-
